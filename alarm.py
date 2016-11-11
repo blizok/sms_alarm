@@ -30,11 +30,11 @@ def sendSMS( number, smstext):
 	return ( a.find('OK')!=-1 )
 
 
-
+#sms details
 myNumber = "+972544939984"
 myText = "mnjam"
-#print "Trying to send SMS"
-if sendSMS(myNumber,myText):
-	b=1
-else:
-	c=1
+#Sending SMS
+sendSMS(myNumber,myText)
+#	b=1
+#else:
+#	c=1
