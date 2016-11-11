@@ -35,6 +35,4 @@ myNumber = "+972544939984"
 myText = "mnjam"
 #Sending SMS
 sendSMS(myNumber,myText)
-#	b=1
-#else:
-#	c=1
+
