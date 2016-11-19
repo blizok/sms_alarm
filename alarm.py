@@ -28,8 +28,8 @@ def sendSMS( number, smstext):
 	return ( a.find('OK')!=-1 )
 
 #initial door status check and sms
-myText = "Garazhik alarm system is up and running"
-myNumber = "+972544939984"
+myText = "Alarm system is up and running"
+myNumber = "+xxx"
 sendSMS(myNumber,myText)
 
 door2 = GPIO.getIOvalue(10)
@@ -39,7 +39,7 @@ elif door2 == 1:
 	myText = "Door status:open"
 else:
 	myText = "Something went wrong on boot..."
-myNumber = "+972544939984"
+myNumber = "+xxx"
 sendSMS(myNumber,myText)
 door1 = door2
 
@@ -54,6 +54,6 @@ while (1):
 		else:
 			myText = "Something went wrong..."
 		door1 = door2
-		myNumber = "+972544939984"
+		myNumber = "+xxx"
 		sendSMS(myNumber,myText)
 
